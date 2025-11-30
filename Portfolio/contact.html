@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext x='1' y='15' font-size='17' font-weight='bold' font-family='monospace' fill='black'%3EA%3Ctspan fill='white'%3E.%3C/tspan%3E%3C/text%3E%3C/svg%3E">
+</head>
+
+<body>
+    <section class="first-section">
+        <div class="menu-container">
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">My Projects</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="">Download CV</a></li>
+            </ul>
+            <p><a href="index.html">Abad Adil<span>▪</span></a></p>
+        </div>
+    </section>
+    <div class="socials">
+        <a href="https://www.instagram.com/abadadil_">
+            <img src="insta.png" alt="Instagram image" />
+        </a>
+        <a href="https://www.github.com/abad05adil12">
+            <img src="github.png" alt="Github image" />
+        </a>
+    </div>
+    <main class="main-section">
+        <section id="project-inquiry">
+            <h2>Start a <span style="color:#ffffff">Project</span></h2>
+            <p class="p">Answer a few quick questions so I can understand your needs.</p>
+
+            <form action="https://formsubmit.co/96abaadadilbhinder@gmail.com" method="POST">
+
+                <label for="fullname">Your Name</label>
+                <input id="fullname" name="fullname" type="text" placeholder="e.g., Sara Ahmed" required>
+
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="e.g., sara@company.com" required>
+
+                <label for="company">Company / Brand (optional)</label>
+                <input id="company" name="company" type="text" placeholder="e.g., PixelLabs">
+
+                <label for="project-type">What do you need?</label>
+                <select id="project-type" name="project_type" required>
+                    <option value="">Select one</option>
+                    <option value="website">New Website</option>
+                    <option value="redesign">Website Redesign</option>
+                    <option value="frontend">Front-End Development</option>
+                    <option value="backend">Back-End/API</option>
+                    <option value="bugfix">Bug Fix / Maintenance</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <fieldset class="field">
+                    <legend>Key Goals (choose any)</legend>
+                    <label"><input type="checkbox" name="goals" value="speed"> Improve performance</label>
+                    <label"><input type="checkbox" name="goals" value="ui"> Better UI/UX</label>
+                    <label"><input type="checkbox" name="goals" value="seo"> SEO</label>
+                    <label"><input type="checkbox" name="goals" value="ecommerce"> E-commerce</label>
+                </fieldset>
+
+                <label for="timeline">Ideal timeline</label>
+                <select id="timeline" name="timeline" required>
+                    <option value="">Choose one</option>
+                    <option value="asap">ASAP (1–2 weeks)</option>
+                    <option value="short">2–4 weeks</option>
+                    <option value="medium">1–2 months</option>
+                    <option value="flexible">Flexible</option>
+                </select>
+
+                <label for="budget">Estimated budget (USD or PKR)</label>
+                <input id="budget" name="budget" type="text" placeholder="e.g., $1,500–$3,000 or PKR 400k">
+
+                <label for="details">Project details</label>
+                <textarea id="details" name="details" rows="6"
+                    placeholder="What are you building? Who’s it for? Any links or references?" required></textarea>
+
+                <label for="links">Relevant links (optional)</label>
+                <input id="links" name="links" type="url" placeholder="e.g., https://example.com">
+
+                <input type="hidden" name="_captcha" value="false"> 
+                <input type="hidden" name="_template" value="table"> 
+                <button type="submit">Submit Inquiry</button>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <h1 class="contact">If any queries please contact below <span class="span">˅</span></h1>
+        <a class="anchor" href="mailto:96abaadadilbhinder@gmail.com">Email : 96abaadadilbhinder@gmail.com</a>
+        <p class="p2"><a href="https://wa.me/923233610396" target="_blank">Contact: PK 0323-3610396</a></p>
+        <script src="index.js"></script>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
